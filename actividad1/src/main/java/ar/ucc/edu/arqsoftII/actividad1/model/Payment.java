@@ -1,4 +1,7 @@
-package ar.ucc.edu.arqsoftII;
+package ar.ucc.edu.arqsoftII.actividad1.model;
+
+
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
 
 import java.util.Date;
 
@@ -14,7 +17,7 @@ import javax.validation.constraints.NotNull;
 @Entity
 @Table(name = "PAYMENT")
 
-public class Payment extends GenericObject{
+public class Payment extends GenericObject {
 	
 	@NotNull
 	@Column(name = "AMOUNT")

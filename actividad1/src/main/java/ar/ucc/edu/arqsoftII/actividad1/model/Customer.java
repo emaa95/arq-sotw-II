@@ -1,4 +1,7 @@
-package ar.ucc.edu.arqsoftII;
+package ar.ucc.edu.arqsoftII.actividad1.model;
+
+
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
 
 import java.util.Set;
 
@@ -39,7 +42,7 @@ public class Customer extends GenericObject {
 	@OneToMany(targetEntity=Customer.class, mappedBy="customer", fetch = FetchType.LAZY)
 	private Set<Payment> payment;
 	
-	private State state; 
+	private State state;
 
 	public String getName() {
 		return name;

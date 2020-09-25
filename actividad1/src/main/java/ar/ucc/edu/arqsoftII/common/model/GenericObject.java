@@ -1,4 +1,4 @@
-package ar.ucc.edu.arqsoftII;
+package ar.ucc.edu.arqsoftII.common.model;
 
 import javax.persistence.Column;
 import javax.persistence.Id;

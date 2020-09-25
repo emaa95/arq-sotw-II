@@ -7,6 +7,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
+
 @Entity
 @Table(name="DETAIL")
 public class Detail extends GenericObject{

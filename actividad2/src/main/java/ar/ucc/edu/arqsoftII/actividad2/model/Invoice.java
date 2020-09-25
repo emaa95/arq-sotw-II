@@ -5,12 +5,16 @@ import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
 
 
 @Entity
@@ -37,6 +41,16 @@ public class Invoice extends GenericObject{
 	@OneToMany(targetEntity=Invoice.class, mappedBy="invoice", fetch = FetchType.LAZY)
 	private Set<Detail> detail;
 	
+	@Enumerated(value = EnumType.ORDINAL)
+	@Column(name = "State")
+	private State state; 
+	
+	public State getState() {
+		return state;
+	}
+	public void setState(State state) {
+		this.state = state;
+	}
 	public Date getDate() {
 		return date;
 	}

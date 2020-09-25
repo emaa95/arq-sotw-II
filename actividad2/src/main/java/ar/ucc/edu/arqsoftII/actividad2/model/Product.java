@@ -6,6 +6,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
+
 @Entity
 @Table(name="PRODUCT")
 public class Product extends GenericObject{
@@ -18,6 +20,7 @@ public class Product extends GenericObject{
 	@NotNull
 	@Column(name = "UNIT_PRICE")
 	private Double unitPrice;
+	
 	public String getName() {
 		return name;
 	}

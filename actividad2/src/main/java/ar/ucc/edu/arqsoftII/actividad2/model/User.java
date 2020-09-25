@@ -10,6 +10,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import ar.ucc.edu.arqsoftII.common.model.GenericObject;
+
 @Entity
 @Table(name="USER")
 

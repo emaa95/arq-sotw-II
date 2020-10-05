@@ -39,6 +39,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.0.0" />
+          <element id="library" level="project" name="Maven: org.modelmapper:modelmapper:2.3.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

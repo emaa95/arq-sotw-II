@@ -1,6 +1,5 @@
 package ar.ucc.edu.arqsoftII.actividad2.model;
 
-import java.util.Date;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -24,7 +23,7 @@ public class Invoice extends GenericObject{
 	
 	@NotNull
 	@Column(name="DATE")
-	private Date date;
+	private int date;
 	
 	@NotNull
 	@Column(name="NUMBER")
@@ -51,10 +50,10 @@ public class Invoice extends GenericObject{
 	public void setState(State state) {
 		this.state = state;
 	}
-	public Date getDate() {
+	public int getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(int date) {
 		this.date = date;
 	}
 	public Long getNumber() {

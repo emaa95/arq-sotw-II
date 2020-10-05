@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface GenericDao<E, ID extends Serializable> {
 
+
     public void insert(E entity);
 
     public void saveOrUpdate(E entity);
